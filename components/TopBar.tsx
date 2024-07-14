@@ -1,11 +1,15 @@
+"use client";
+
 import Link from "next/link";
-import { ReactElement } from "react";
+import { ReactElement, useState } from "react";
 import { FaCode, FaQuestion } from "react-icons/fa6";
 import { IoIosJournal, IoIosSettings } from "react-icons/io";
 import { IoChatbubble } from "react-icons/io5";
 import { LuPopcorn } from "react-icons/lu";
+import { MdOutlineWindow, MdWindow } from "react-icons/md";
 
 export default function TopBar() {
+  const [windowOpen, setWindowOpen] = useState(false);
   const buttons: { text: string; link: string; icon: ReactElement }[] = [
     {
       text: "About",
@@ -40,16 +44,29 @@ export default function TopBar() {
   ];
   return (
     <div className="flex flex-col items-center gap-10">
-      <div className="text-white bg-yellow-500/80 rounded-full px-3 py-1 flex flex-row gap-10 shadow-md">
-        <p>daryll.ko</p>
+      <div className="text-white bg-yellow-500/60 rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-md">
+        <h1 className="text-xl">daryll.ko</h1>
         <p>07/09/24</p>
-        <button>open (icon)</button>
+        <button
+          onClick={() => setWindowOpen((cur) => !cur)}
+          className="hover:bg-yellow-500/80 p-2 rounded-lg transition-all"
+        >
+          {windowOpen ? (
+            <MdOutlineWindow className="h-8 w-8" />
+          ) : (
+            <MdWindow className="h-8 w-8" />
+          )}
+        </button>
       </div>
-      <div className="bg-yellow-500/60 rounded-md p-3 grid grid-cols-3 grid-rows-2">
+      <div
+        className={`bg-yellow-500/60 rounded-lg grid grid-cols-3 grid-rows-2 md:flex flex-row ${
+          windowOpen ? "" : "hidden md:hidden"
+        }`}
+      >
         {buttons.map(({ text, link, icon }, i) => (
           <div
             key={i}
-            className="h-20 w-20 hover:bg-yellow-500/80 rounded-md transition-all"
+            className="h-20 w-20 hover:bg-yellow-500/80 rounded-lg transition-all"
           >
             <Link
               href={link}
