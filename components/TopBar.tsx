@@ -43,7 +43,7 @@ export default function TopBar() {
     },
   ];
   return (
-    <div className="flex flex-col items-center gap-10">
+    <div className="fixed top-20 flex flex-col items-center gap-10">
       <div className="text-white bg-yellow-500/60 rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-md">
         <h1 className="text-xl">daryll.ko</h1>
         <p>07/09/24</p>
