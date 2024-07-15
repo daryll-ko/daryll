@@ -44,7 +44,7 @@ export default function TopBar() {
   ];
   return (
     <div className="fixed top-20 flex flex-col items-center gap-10">
-      <div className="text-white bg-yellow-500/60 rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-md">
+      <div className="text-white bg-[#8c6b0c] rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-lg">
         <h1 className="text-xl">daryll.ko</h1>
         <p>07/09/24</p>
         <button
@@ -59,7 +59,7 @@ export default function TopBar() {
         </button>
       </div>
       <div
-        className={`bg-yellow-500/60 rounded-lg grid grid-cols-3 grid-rows-2 md:flex flex-row ${
+        className={`bg-[#8c6b0c] shadow-lg rounded-lg grid grid-cols-3 grid-rows-2 md:flex flex-row ${
           windowOpen ? "" : "hidden md:hidden"
         }`}
       >
