@@ -9,5 +9,7 @@ interface Props {
 }
 
 export default function JP({ children, className }: Props) {
-  return <p className={`${kleeOne.className} ${className}`}>{children}</p>;
+  return (
+    <span className={`${kleeOne.className} ${className}`}>{children}</span>
+  );
 }
