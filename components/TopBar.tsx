@@ -42,11 +42,12 @@ export default function TopBar() {
       icon: <IoIosSettings className="h-8 w-8" />,
     },
   ];
+  const date = new Date().toLocaleDateString();
   return (
     <div className="fixed top-20 flex flex-col items-center gap-10">
       <div className="text-white bg-[#8c6b0c] rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-lg">
         <h1 className="text-xl">daryll.ko</h1>
-        <p>07/09/24</p>
+        <p>{date}</p>
         <button
           onClick={() => setWindowOpen((cur) => !cur)}
           className="hover:bg-yellow-500/80 p-2 rounded-lg transition-all"
