@@ -65,7 +65,7 @@ export default function TopBar() {
               <IoIosMove className="h-8 w-8" />
             </div>
           </DropdownMenuTrigger>
-          <DropdownMenuContent className="w-28 border-gray-600 text-white bg-gray-800 shadow-lg rounded-md">
+          <DropdownMenuContent className="w-28 shadow-lg">
             <DropdownMenuLabel>Where to?</DropdownMenuLabel>
             <DropdownMenuSeparator className="bg-gray-600" />
             {buttons.map(({ text, link, icon }, i) => (
