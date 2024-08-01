@@ -52,7 +52,7 @@ export default function TopBar() {
   ];
   const date = new Date().toLocaleDateString();
   return (
-    <div className="fixed top-20 flex flex-col items-center gap-10">
+    <div className="fixed w-full top-20 flex flex-col items-center gap-10">
       <div className="text-white bg-gray-800 rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-lg">
         <h1 className="text-xl">daryll.ko</h1>
         <p>{date}</p>

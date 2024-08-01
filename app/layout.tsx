@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Quicksand } from "next/font/google";
 import "./globals.css";
+import TopBar from "@/components/TopBar";
 
 const quicksand = Quicksand({ subsets: ["latin"], display: "swap" });
 
@@ -16,7 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={quicksand.className}>{children}</body>
+      <body className={quicksand.className}>
+        <TopBar />
+        {children}
+      </body>
     </html>
   );
 }
