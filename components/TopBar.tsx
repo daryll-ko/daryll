@@ -54,7 +54,9 @@ export default function TopBar() {
   return (
     <div className="fixed z-10 w-full top-20 flex flex-col items-center gap-10">
       <div className="text-white bg-gray-800 rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-lg">
-        <h1 className="text-xl">daryll.ko</h1>
+        <Link href="/">
+          <h1 className="text-xl">daryll.ko</h1>
+        </Link>
         <p>{date}</p>
         <DropdownMenu>
           <DropdownMenuTrigger>
