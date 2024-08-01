@@ -6,7 +6,6 @@ import { FaCode, FaQuestion } from "react-icons/fa6";
 import { IoIosJournal, IoIosMove, IoIosSettings } from "react-icons/io";
 import { IoChatbubble } from "react-icons/io5";
 import { LuPopcorn } from "react-icons/lu";
-import { MdOutlineWindow, MdWindow } from "react-icons/md";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,7 +16,6 @@ import {
 } from "./ui/dropdown-menu";
 
 export default function TopBar() {
-  const [windowOpen, setWindowOpen] = useState(false);
   const buttons: { text: string; link: string; icon: ReactElement }[] = [
     {
       text: "About",
@@ -60,10 +58,7 @@ export default function TopBar() {
         <p>{date}</p>
         <DropdownMenu>
           <DropdownMenuTrigger>
-            <div
-              onClick={() => setWindowOpen((cur) => !cur)}
-              className="hover:bg-gray-600 p-2 rounded-lg transition-all"
-            >
+            <div className="hover:bg-gray-600 p-2 rounded-lg transition-all">
               <IoIosMove className="h-8 w-8" />
             </div>
           </DropdownMenuTrigger>
