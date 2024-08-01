@@ -5,7 +5,7 @@ const kleeOne = Klee_One({ weight: "400", subsets: ["latin"] });
 
 interface Props {
   children: ReactNode;
-  className: string;
+  className?: string;
 }
 
 export default function JP({ children, className }: Props) {
