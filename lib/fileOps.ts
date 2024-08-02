@@ -16,5 +16,7 @@ export function getFileContents(
 
 export function getSlugs(directory: string = writingDirectory) {
   const filenames = fs.readdirSync(directory);
-  return filenames.map((filename) => filename.replace(/\.mdx$/, ""));
+  return filenames
+    .filter((filename) => filename.endsWith(".mdx"))
+    .map((filename) => filename.replace(/\.mdx$/, ""));
 }
