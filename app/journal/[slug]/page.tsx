@@ -1,5 +1,7 @@
+import "@/styles/github-dark.css";
 import "katex/dist/katex.min.css";
 
+import rehypeHighlight from "rehype-highlight";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
@@ -17,7 +19,7 @@ export default async function Note({ params }: { params: { slug: string } }) {
         options={{
           mdxOptions: {
             remarkPlugins: [remarkMath],
-            rehypePlugins: [rehypeKatex],
+            rehypePlugins: [rehypeKatex, rehypeHighlight],
           },
         }}
         components={{ JP }}
