@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "daryll.ko » Chat",
+  title: "daryll.ko » Journal",
 };
 
 export default function Layout({
@@ -9,9 +9,5 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <main className="flex mt-52 flex-col items-center justify-center gap-5">
-      {children}
-    </main>
-  );
+  return <main>{children}</main>;
 }
