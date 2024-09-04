@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ReactElement, useState } from "react";
 import { FaCode, FaQuestion } from "react-icons/fa6";
-import { IoIosJournal, IoIosMove, IoIosSettings } from "react-icons/io";
+import { IoIosJournal, IoIosMove } from "react-icons/io";
 import { IoChatbubble } from "react-icons/io5";
 import { LuPopcorn } from "react-icons/lu";
 import {
@@ -41,11 +41,6 @@ export default function TopBar() {
       text: "Journal",
       link: "/journal",
       icon: <IoIosJournal className="h-8 w-8" />,
-    },
-    {
-      text: "Settings",
-      link: "/settings",
-      icon: <IoIosSettings className="h-8 w-8" />,
     },
   ];
   const date = new Date().toLocaleDateString();
