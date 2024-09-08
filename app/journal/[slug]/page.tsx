@@ -13,7 +13,7 @@ export default async function Note({ params }: { params: { slug: string } }) {
   const source = getFileContents(params.slug);
 
   return (
-    <main className="mx-auto mt-52 prose lg:prose-lg dark:prose-invert prose-code:before:hidden prose-code:after:hidden">
+    <main className="mx-auto mt-52 mb-24 prose lg:prose-lg dark:prose-invert prose-code:before:hidden prose-code:after:hidden">
       <MDXRemote
         source={source}
         options={{
