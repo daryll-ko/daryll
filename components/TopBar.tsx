@@ -39,12 +39,12 @@ export default function TopBar() {
   ];
   const date = new Date().toLocaleDateString();
   return (
-    <div className="fixed z-10 w-full top-20 flex flex-col items-center gap-10">
-      <div className="text-white bg-gray-800 rounded-full px-6 py-1 flex flex-row items-center gap-10 shadow-lg">
+    <div className="z-10 fixed mx-auto top-0 w-full flex flex-col items-center gap-10">
+      <div className="text-white bg-gray-800 rounded-b-full px-14 pt-1 pb-2 flex flex-row items-center gap-10 shadow-lg">
         <Link href="/">
-          <h1 className="text-xl">daryll.ko</h1>
+          <h1 className="text-2xl">daryll.ko</h1>
         </Link>
-        <p>{date}</p>
+        <p className="text-lg">{date}</p>
         <DropdownMenu>
           <DropdownMenuTrigger>
             <div className="hover:bg-gray-600 p-2 rounded-lg transition-all">
