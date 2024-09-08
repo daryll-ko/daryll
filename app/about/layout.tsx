@@ -10,7 +10,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="mx-auto prose lg:prose-lg min-h-screen dark:prose-invert prose-code:before:hidden prose-code:after:hidden">
+    <div className="mx-auto prose prose-lg min-h-screen dark:prose-invert prose-code:before:hidden prose-code:after:hidden">
       {children}
     </div>
   );
