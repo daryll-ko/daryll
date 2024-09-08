@@ -15,8 +15,8 @@ export default function Journal() {
   const links = getLinks();
 
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center gap-5 p-24">
-      <div className="flex flex-col gap-1 w-full md:w-[60%]">{links}</div>
+    <div className="flex flex-col items-center justify-center gap-5">
+      <div className="flex flex-col gap-1 w-full md:w-[50%]">{links}</div>
     </div>
   );
 }

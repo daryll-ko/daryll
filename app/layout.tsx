@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={quicksand.className}>
         <TopBar />
-        {children}
+        <main className="mt-52 mb-28 px-10 md:px-0">{children}</main>
       </body>
     </html>
   );
