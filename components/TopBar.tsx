@@ -1,11 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { ReactElement, useState } from "react";
+import { ReactElement } from "react";
 import { FaCode, FaQuestion } from "react-icons/fa6";
 import { IoIosJournal, IoIosMove } from "react-icons/io";
 import { IoChatbubble } from "react-icons/io5";
-import { LuPopcorn } from "react-icons/lu";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -21,11 +20,6 @@ export default function TopBar() {
       text: "About",
       link: "/about",
       icon: <FaQuestion className="h-8 w-8" />,
-    },
-    {
-      text: "Anime",
-      link: "/anime",
-      icon: <LuPopcorn className="h-8 w-8" />,
     },
     {
       text: "Chat",
