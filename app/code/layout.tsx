@@ -9,5 +9,9 @@ export default function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="mt-52 mb-24 mx-auto">{children}</div>;
+  return (
+    <div className="min-h-screen flex justify-center items-center mx-auto">
+      <div className="w-full">{children}</div>
+    </div>
+  );
 }
