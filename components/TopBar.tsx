@@ -55,10 +55,10 @@ export default function TopBar() {
             <DropdownMenuLabel>Where to?</DropdownMenuLabel>
             <DropdownMenuSeparator className="bg-gray-600" />
             {buttons.map(({ text, link, icon }, i) => (
-              <DropdownMenuItem key={i} className="rounded-md">
+              <DropdownMenuItem key={i} className="rounded-md p-0">
                 <Link
                   href={link}
-                  className="h-full w-full flex flex-row justify-start gap-2 items-center"
+                  className="h-full w-full flex flex-row p-2 justify-start gap-2 items-center"
                 >
                   {icon}
                   <p>{text}</p>
