@@ -10,7 +10,7 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="flex flex-row items-center justify-center gap-10 text-lg md:text-xl">
+    <div className="mt-52 mb-24 flex flex-row items-center justify-center gap-10 text-lg md:text-xl">
       {children}
     </div>
   );
