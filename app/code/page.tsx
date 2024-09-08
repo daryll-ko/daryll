@@ -27,12 +27,12 @@ export default function Code() {
         <div className="flex flex-col justify-center items-center gap-3 aspect-square">
           <Image src={image} width={500} height={500} alt={altText} />
           <div className="flex flex-row gap-5 items-center">
-            <h1 className="text-2xl font-bold">{name}</h1>
+            <h1 className="text-3xl font-bold">{name}</h1>
             <Link href={links.github}>
               <FaGithub className="hover:scale-110 transition-all h-6 w-6" />
             </Link>
           </div>
-          <p>{description}</p>
+          <p className="text-lg">{description}</p>
         </div>
       </CarouselItem>
     ),
