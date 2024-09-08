@@ -1,10 +1,10 @@
 import JP from "@/components/JP.tsx";
 import Image from "next/image";
 
-<div className="flex flex-row gap-14 items-center">
+<div className="flex flex-col md:flex-row gap-14 items-center">
 <div className="flex w-full flex-col gap-10 items-center">
 <Image
-  className="rounded-xl w-full not-prose"
+  className="rounded-xl aspect-square object-top object-cover w-[50%] md:aspect-auto md:w-full not-prose"
   src="/daryll.png"
   alt="Image of daryll"
   width={163}
